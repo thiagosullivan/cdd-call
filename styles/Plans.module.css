@@ -1,0 +1,135 @@
+.plans {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%, 
+    #ffffff 40%, 
+    #7AD0DF 40%, 
+    #7AD0DF 100%
+  );
+}
+.plansContent {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.planCard {
+  max-width: 300px;
+  width: 100%;
+  min-height: 430px;
+  margin: 20px;
+  padding: 2rem;
+  background-color: #003889;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+.planCard h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.planCard__price {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  min-height: 60px;
+}
+.planCard__priceNumber {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.planCard__priceNumber p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.planCard__price p:first-child {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.planCard__price p:last-child {
+  margin-top: auto;
+  margin-left: 10px;
+}
+.planCard__price p {
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+}
+.planCard__desc {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.planCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+
+  background-color: #ffbc40;
+  border-radius: 5px;
+}
+.planCard_note {
+  font-size: .8rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+.planCard__list {
+  min-height: 110px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.planCard__list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.planCard__list li:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1067px){
+  .planCard {
+    min-height: 470px;
+  }
+  .planCard__price {
+    min-height: 75px;
+  }
+}
+@media screen and (max-width: 1028px){
+  .planCard h3 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .planCard__desc,
+  .planCard__list {
+    min-height: 130px;
+  }
+}
+@media screen and (max-width: 980px){
+  .plans {
+    background: none;
+  }
+  .plansContent {
+    flex-direction: column;
+  }
+  .planCard {
+    max-width: 500px;
+  }
+  .planCard__list {
+    margin: 0 auto;
+  }
+  .planCard a {
+    margin-top: 1rem;
+  }
+}

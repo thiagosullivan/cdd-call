@@ -1,0 +1,36 @@
+.thanksContent {
+  height: calc(100vh - 439px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thanksContent h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.thanksContent p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.thanksContent a {
+  font-size: 1.5rem;
+  color: #003889;
+}
+
+@media screen and (max-width: 980px){
+  .thanksContent {
+    height: calc(100vh - 71px);
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .thanksContent h1 {
+    font-size: 2.5rem;
+  }
+  .thanksContent a {
+    font-size: 1.2rem;
+  }
+}

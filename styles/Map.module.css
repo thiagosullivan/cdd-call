@@ -1,0 +1,8 @@
+.mapCont {
+  margin-bottom: 10px;
+}
+.mapCont iframe {
+  max-width: 1900px;
+  width: calc(100vw - 17px);
+  overflow-x: hidden;
+}

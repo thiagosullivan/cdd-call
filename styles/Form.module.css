@@ -1,0 +1,152 @@
+.form {
+  background-color: #7AD0DF;
+  padding: 5rem 1rem 10rem;
+}
+.formCont {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;  
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.formVideo {
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 60%;
+  padding: 0 1rem;
+  position: relative;
+}
+.formDiv h1 {
+  font-weight: 400;
+  padding: 0 1.5rem;
+  font-size: 2rem;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 1.5rem;
+}
+.formContainer input {
+  max-width: 320px;
+  width: 100%;
+}
+.formDiv button {
+  background-color: #003889;
+  color: #ffbc40;
+  border: 1px solid transparent;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.formDiv button:active {
+  transform: scale(0.98);
+}
+.formContainer input {
+  background-color: rgba(255,255,255,.8);
+  border: none;
+  color: #707070;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.hiddenLabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.errorInputTxt {
+  font-size: .9rem;
+  color: #f10909;
+  font-weight: bold;
+  transition: all 150ms ease-in;
+  margin-top: -15px;
+}
+.loading {
+  background-color: #0E448D;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.3);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading span {
+  margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 1213px){
+  .formDiv {
+    max-width: 50%;
+    margin-left: 1rem;
+  }
+  .formDiv h1 {
+    font-size: 2.5rem !important;
+  }
+  .formContainer input {
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 980px){
+  .form {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 10%, 
+      #ffffff 10%, 
+      #7AD0DF 20%, 
+      #7AD0DF 100%
+    )
+  }
+  .formCont {
+    flex-direction: column;
+  }
+  .formDiv {
+    max-width: unset;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .formDiv button {
+    width: 100%;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .form {
+    padding-bottom: 5rem;
+  }
+  .formDiv {
+    padding: 0;
+  }
+  .formDiv h1 {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .formDiv button {
+    width: unset;
+    height: unset;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+}
