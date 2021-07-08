@@ -125,9 +125,9 @@ export default function Form() {
           </div>
           <button onClick={sendEmail}>Enviar</button>
           { loading ? (
-          <div class="loading">
+          <div className="loading">
             <span>Enviando...</span>
-            <div class="spinner"></div>
+            <div className="spinner"></div>
           </div>
           ) : ''}              
         </form>        
