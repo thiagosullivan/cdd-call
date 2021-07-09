@@ -1,16 +1,17 @@
 const nodemailer = require('nodemailer');
 
-export default function sendEmail(req, res) {
+export default async function sendEmail(req, res) {
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587,
+    port: 465,
+    secure: true,
     auth: {
       user: 'cddcred.business@gmail.com',
       pass: 'CddCredBusiness'
     }
   })
 
-  transporter.sendMail({
+  await transporter.sendMail({
     from: `"Formulário do Site 📑" ${process.env.USERMAIL}`,
     to: process.env.USERMAIL,
     replyTo: req.body.email,
